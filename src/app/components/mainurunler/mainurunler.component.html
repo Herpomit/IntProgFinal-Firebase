@@ -1,0 +1,104 @@
+<div class="container">
+    <div class="row" *ngIf="uye | async as user">
+        <div class="col-8">
+            <h3 class="mt-3">Ürünler</h3>
+            <select class="form-control" [(ngModel)]="katId" (ngModelChange)="KatSec($event)">
+                <option [value]="kat.katId" *ngFor="let kat of kategoriler">{{kat.adi}}</option>
+            </select>
+            <div style="display: inline-flex;" class="col-4 mt-1" *ngFor="let product of urunler">
+                <div class="form text-center mt-2">
+                    <img src="{{ product.imgUrl }}" style="height: 200px; width: 200px;" alt="" srcset="">
+                    <h4>{{ product.adi }}</h4>
+                    <h5 class="text-danger">{{ product.fiyati }} TL</h5>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6">
+                                <input type="number" class="form-control form-control-sm" value="1" #adet>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-2 mb-3"
+                        (click)="SepeteEkle(product, adet.value)">SepeteEkle</button>
+                    <button class="btn btn-warning mt-2 mb-3 ms-3"
+                    [routerLink]="['/commentspage',product.urunId,product.categoryId]">Yorum</button>
+                    <button class="btn btn-success mt-2 mb-3 ms-3" (click)="Begen(product,user)"><i class="bi bi-hand-thumbs-up"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h3 class="text-center text-success mt-3">Sepetiniz</h3>
+            <hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Ürün Adı</th>
+                        <th>Adedi</th>
+                        <th>Tutar</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let basket of baskets let index = index">
+                        <td>{{ index +1}}</td>
+                        <td>{{ basket.urun.adi }}</td>
+                        <td><input type="number" min="1" id="adet-{{basket.urun.adi}}" [value]="basket.adet"
+                                (click)="DataDegistir(basket)"></td>
+                        <td>{{ basket.adet * basket.urun.fiyati | currency : 'TRY':'symbol-narrow':'1.2-2'}}</td>
+                        <td><button class="btn btn-sm btn-outline-danger" (click)="SepetUrunSil(basket)">Sil</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Toplam</th>
+                        <th [innerText]="calc() | currency: 'TRY':'symbol-narrow':'1.2-2'" id="ToplamOdenecek">
+                        <th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="form-group text-center">
+                <button class="btn btn-lg btn-success" (click)="OdemeYap(modalOdemeEkrani)">Ödeme Yap</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" #modalOdemeEkrani>
+    <div class="modal-dialog">
+        <form [formGroup]="frm">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">{{modalBaslik}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label>Ad Soyad</label>
+                        <input type="text" class="form-control">
+                        <label>Kart Numarası</label>
+                        <input type="number" min="0" class="form-control">
+                        <label>CCV</label>
+                        <input type="number" class="form-control">
+                        <label>Son Kullanma Tarihi</label>
+                        <input type="text" class="form-control">
+                        <label class="form-label">Toplam Ödenecek Tutar</label>
+                        <h3 class="text-danger"> {{ toplam | currency: 'TRY':'symbol-narrow':'1.2-2' }}</h3>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+
+                    <input type="submit" class="btn btn-outline-success" (click)="Odeme()" value="Ödeme Yap">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,499 @@
+{
+  "categories": [
+    {
+      "id": 2,
+      "adi": "Ev&Mobilya",
+      "kaytarih": "1669743885524",
+      "duztarih": "1669909126790"
+    },
+    {
+      "id": 3,
+      "adi": "Süper Market",
+      "kaytarih": "1669909135964",
+      "duztarih": "1669909135964"
+    },
+    {
+      "id": 4,
+      "adi": "Kozmetik",
+      "kaytarih": "1669909149051",
+      "duztarih": "1669909149051"
+    },
+    {
+      "id": 5,
+      "adi": "Ayakkabı & Çanta",
+      "kaytarih": "1669909157665",
+      "duztarih": "1669909157665"
+    },
+    {
+      "id": 6,
+      "adi": "Saat & Aksesuar",
+      "kaytarih": "1669909164923",
+      "duztarih": "1669909164923"
+    },
+    {
+      "id": 7,
+      "adi": "Elektronik",
+      "kaytarih": "1669909172645",
+      "duztarih": "1669909172645"
+    },
+    {
+      "id": 8,
+      "adi": "Spor & Outdoor",
+      "kaytarih": "1669909182785",
+      "duztarih": "1669909182785"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "adsoyad": "Ali",
+      "mail": "ali@mail.com",
+      "admin": "1",
+      "parola": "123",
+      "kaytarih": "1668070115626",
+      "duztarih": "1668085146787"
+    },
+    {
+      "id": 2,
+      "adsoyad": "veli",
+      "mail": "veli@mail.com",
+      "admin": "0",
+      "parola": "123",
+      "kaytarih": "1668070283323",
+      "duztarih": "1668085150210"
+    },
+    {
+      "id": 3,
+      "adsoyad": "canberk",
+      "mail": "test07@mail.com",
+      "admin": "0",
+      "parola": "123",
+      "kaytarih": "1670311440899",
+      "duztarih": "1670311440899"
+    },
+    {
+      "id": 4,
+      "adsoyad": "test07",
+      "mail": "test07@mail.com",
+      "admin": "0",
+      "parola": "123",
+      "kaytarih": "1670327179859",
+      "duztarih": "1670327179859"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "prdoductId": 13,
+      "adi": "Canberk",
+      "yorum": "Çok Güzel"
+    },
+    {
+      "id": 2,
+      "name": "Canberk",
+      "yorum": "asdadsadadas"
+    },
+    {
+      "id": 3,
+      "productId": "13",
+      "name": "Canberk Akın",
+      "yorum": "Çok Güzel denedim direk geldi"
+    },
+    {
+      "id": 4,
+      "productId": "13",
+      "name": "Naber",
+      "yorum": "asdawdsa"
+    },
+    {
+      "id": 5,
+      "productId": "1",
+      "name": "Naber",
+      "yorum": "asdsadsa"
+    },
+    {
+      "id": 6,
+      "productId": "11",
+      "uyeId": null,
+      "name": "Ali",
+      "yorum": "saasdsadsa"
+    },
+    {
+      "id": 7,
+      "productId": "11",
+      "uyeId": null,
+      "name": "veli",
+      "yorum": "sadasdasdas"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "adi": "Kumbara",
+      "categoryId": "2",
+      "imgUrl": "https://evidea.akinoncdn.com/products/2021/01/11/51942/c8d3969e-d01a-4b62-bf3a-22b51e89ec3b_size616x616_cropTop.jpg",
+      "adedi": null,
+      "fiyati": 23.4
+    },
+    {
+      "id": 4,
+      "adi": "Gardırop",
+      "categoryId": "2",
+      "imgUrl": "https://productimages.hepsiburada.net/s/88/375/110000030577942.jpg",
+      "adedi": null,
+      "fiyati": 1999.9
+    },
+    {
+      "id": 5,
+      "adi": "Makyaj Masası",
+      "categoryId": "2",
+      "imgUrl": "https://cdn.shopify.com/s/files/1/0048/4737/0274/products/8681124814890-1_800x.jpg?v=1663844272",
+      "adedi": null,
+      "fiyati": 780
+    },
+    {
+      "id": 6,
+      "adi": "Perde",
+      "categoryId": "2",
+      "imgUrl": "https://cdn.dsmcdn.com/ty50/product/media/images/20210112/7/51719552/100106883/1/1_org_zoom.jpg",
+      "adedi": null,
+      "fiyati": 77
+    },
+    {
+      "id": 7,
+      "adi": "Lambader",
+      "categoryId": "2",
+      "imgUrl": "https://productimages.hepsiburada.net/s/95/375/110000038217389.jpg",
+      "adedi": null,
+      "fiyati": 269.9
+    },
+    {
+      "id": 8,
+      "adi": "Halı",
+      "categoryId": "2",
+      "imgUrl": "https://cdn.dsmcdn.com/mnresize/500/-/ty336/product/media/images/20220219/20/53895265/312045599/1/1_org.jpg",
+      "adedi": null,
+      "fiyati": 660
+    },
+    {
+      "id": 9,
+      "adi": "Duvar Saati",
+      "categoryId": "2",
+      "imgUrl": "https://cdnsta.avansas.com/mnresize/900/-/urun/77030/galaxy-d200k1-dek-duvar-saati-25cm-zoom-1.jpg",
+      "adedi": null,
+      "fiyati": 119.9
+    },
+    {
+      "id": 10,
+      "adi": "Banyo Seti",
+      "categoryId": "2",
+      "imgUrl": "https://cdn.dsmcdn.com/mnresize/500/-/ty404/product/media/images/20220419/17/94444899/155207183/1/1_org.jpg",
+      "adedi": null,
+      "fiyati": 214.99
+    },
+    {
+      "id": 11,
+      "adi": "Çay",
+      "categoryId": "3",
+      "imgUrl": "https://productimages.hepsiburada.net/s/25/375/10108396503090.jpg",
+      "adedi": null,
+      "fiyati": 60
+    },
+    {
+      "id": 12,
+      "adi": "Türk Kahvesi 100g",
+      "categoryId": "3",
+      "imgUrl": "https://images.hepsiburada.net/assets/ProductDescription/202102/5b5c3caa-308e-40ed-8063-e8d082d20c58.jpg",
+      "adedi": null,
+      "fiyati": 20
+    },
+    {
+      "id": 13,
+      "adi": "Karışık Kuruyemiş x10",
+      "categoryId": "3",
+      "imgUrl": "https://images.ofix.com/product-image/s91637_2.jpg",
+      "adedi": null,
+      "fiyati": 150
+    },
+    {
+      "id": 14,
+      "adi": "Saç Bakım Kremi",
+      "categoryId": "3",
+      "imgUrl": "https://img-cosmetica.mncdn.com/UPLOAD/URUNLER/thumb/003097_medium.png",
+      "adedi": null,
+      "fiyati": 250
+    },
+    {
+      "id": 15,
+      "adi": "Gıda Takviye Hapı",
+      "categoryId": "3",
+      "imgUrl": "https://cdn.dsmcdn.com/ty78/product/media/images/20210303/12/68210776/56943350/1/1_org_zoom.jpg",
+      "adedi": null,
+      "fiyati": 95
+    },
+    {
+      "id": 16,
+      "adi": "Diş Beyazlatıcı Jel",
+      "categoryId": "3",
+      "imgUrl": "https://productimages.hepsiburada.net/s/97/375/110000040546503.jpg",
+      "adedi": null,
+      "fiyati": 129
+    },
+    {
+      "id": 17,
+      "adi": "Göz Makyaj Seti",
+      "categoryId": "4",
+      "imgUrl": "https://www.kozmela.com/UserFiles/Product/big/079625019919.jpg",
+      "adedi": null,
+      "fiyati": 219.9
+    },
+    {
+      "id": 18,
+      "adi": "Yüz Nemlendirici",
+      "categoryId": "4",
+      "imgUrl": "https://www.dermoeczanem.com/la-roche-posay-toleriane-sensitive-rich-nemlendirici-yuz-kremi-40-ml-la-roche-posay-118359-48-B.jpg",
+      "adedi": null,
+      "fiyati": 119
+    },
+    {
+      "id": 19,
+      "adi": "Ter Önleyici Krem ",
+      "categoryId": "4",
+      "imgUrl": "https://productimages.hepsiburada.net/s/70/375/110000011555260.jpg",
+      "adedi": null,
+      "fiyati": 49.5
+    },
+    {
+      "id": 20,
+      "adi": "Ağda Seti",
+      "categoryId": "4",
+      "imgUrl": "https://productimages.hepsiburada.net/s/39/500/10642969788466.jpg",
+      "adedi": null,
+      "fiyati": 155.2
+    },
+    {
+      "id": 21,
+      "adi": "Yüz Temizleyici Krem",
+      "categoryId": "4",
+      "imgUrl": "https://cdn.dsmcdn.com/ty109/product/media/images/20210428/21/83530265/9160235/1/1_org_zoom.jpg",
+      "adedi": null,
+      "fiyati": 259.95
+    },
+    {
+      "id": 22,
+      "adi": "Kapatıcı Krem",
+      "categoryId": "4",
+      "imgUrl": "https://img.joomcdn.net/d76193d51127bd0c8e47f612f9374905392d186a_original.jpeg",
+      "adedi": null,
+      "fiyati": 159.6
+    },
+    {
+      "id": 23,
+      "adi": "Göz Altı Aydınlatıcı Krem",
+      "categoryId": "4",
+      "imgUrl": "https://cdn.dsmcdn.com/ty204/product/media/images/20211021/17/153540937/160048343/2/2_org_zoom.jpg",
+      "adedi": null,
+      "fiyati": 107.5
+    },
+    {
+      "id": 24,
+      "adi": "Kadın Spor Ayakkabı",
+      "categoryId": "5",
+      "imgUrl": "https://www.jump.com.tr/jump-26275-beyaz-kadin-spor-ayakkabi-sneaker-jump-26275-127649-38-O.jpg",
+      "adedi": null,
+      "fiyati": 890
+    },
+    {
+      "id": 25,
+      "adi": "Topuklu Ayakkabı",
+      "categoryId": "5",
+      "imgUrl": "https://floimages.mncdn.com/media/catalog/product/22-02/09/101080247_f2.JPG",
+      "adedi": null,
+      "fiyati": 1250
+    },
+    {
+      "id": 26,
+      "adi": "Kadın Günlük Ayakkabı",
+      "categoryId": "5",
+      "imgUrl": "https://img-morhipo.mncdn.com/mnresize/1200/1645/productimages/iii/2020310012184/[img][5][2].jpg?1423",
+      "adedi": null,
+      "fiyati": 250
+    },
+    {
+      "id": 27,
+      "adi": "Erkek Spor Ayakkabı",
+      "categoryId": "5",
+      "imgUrl": "https://contents.mediadecathlon.com/p1876652/k$2685b59bc8d289abf686ca79841bc3e9/sq/250x250/Erkek-Spor-Ayakkabilar.jpg",
+      "adedi": null,
+      "fiyati": 919
+    },
+    {
+      "id": 28,
+      "adi": "Erkek Günlük Ayakkabı",
+      "categoryId": "5",
+      "imgUrl": "https://cdn03.ciceksepeti.com/cicek/kcm601021-5/XL/hakiki-deri-carik-model-erkek-gunluk-ayakkabi-kcm601021-5-6a8e134c1cd347afad93b46b5564c384.jpg",
+      "adedi": null,
+      "fiyati": 419
+    },
+    {
+      "id": 29,
+      "adi": "Erkek Klasik Ayakkabı",
+      "categoryId": "5",
+      "imgUrl": "https://img-morhipo.mncdn.com/mnresize/1200/1645/productimages/ii/8682545301600/[img][5][1].jpg?1216",
+      "adedi": null,
+      "fiyati": 449
+    },
+    {
+      "id": 30,
+      "adi": "Çocuk Sırt Çantası",
+      "categoryId": "5",
+      "imgUrl": "data:image/jpeg;base64,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",
+      "adedi": null,
+      "fiyati": 1450
+    },
+    {
+      "id": 31,
+      "adi": "Kol Saati",
+      "categoryId": "6",
+      "imgUrl": "https://cdn.dsmcdn.com/ty344/product/media/images/20220224/18/58056722/62062531/1/1_org_zoom.jpg",
+      "adedi": null,
+      "fiyati": 145.9
+    },
+    {
+      "id": 32,
+      "adi": "Güneş Gözlüğü",
+      "categoryId": "6",
+      "imgUrl": "https://productimages.hepsiburada.net/s/36/1500/10500750934066.jpg",
+      "adedi": null,
+      "fiyati": 230
+    },
+    {
+      "id": 33,
+      "adi": "14 Ayar Altın Kolye",
+      "categoryId": "6",
+      "imgUrl": "https://st1.myideasoft.com/shop/zr/36/myassets/products/265/tasli-kartanesi-14-ayar-altin-kolye-246243.jpg?revision=1645875988",
+      "adedi": null,
+      "fiyati": 1882.92
+    },
+    {
+      "id": 34,
+      "adi": "14 Ayar Altın Küpe",
+      "categoryId": "6",
+      "imgUrl": "https://cdn.cimri.io/image/1000x1000/bilezikhanetalhalkagramayaraltnkpe_268105475.jpg",
+      "adedi": null,
+      "fiyati": 1018.84
+    },
+    {
+      "id": 35,
+      "adi": "Cüzdan",
+      "categoryId": "6",
+      "imgUrl": "data:image/jpeg;base64,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",
+      "adedi": null,
+      "fiyati": 169.95
+    },
+    {
+      "id": 36,
+      "adi": "Kemer",
+      "categoryId": "6",
+      "imgUrl": "https://productimages.hepsiburada.net/s/47/600-800/10935628988466.jpg",
+      "adedi": null,
+      "fiyati": 280
+    },
+    {
+      "id": 37,
+      "adi": "Elektrikli Süpürge",
+      "categoryId": "7",
+      "imgUrl": "https://www.korkmazstore.com.tr/korkmaz-tempratik-dikey-azurasiyah-elektrikli-supurge-a920-05-elektrikli-supurgeler-9437-85-B.jpg",
+      "adedi": null,
+      "fiyati": 1897
+    },
+    {
+      "id": 38,
+      "adi": "Apple Iphone 11 128gb",
+      "categoryId": "7",
+      "imgUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113155-2_large.jpg",
+      "adedi": null,
+      "fiyati": 17287
+    },
+    {
+      "id": 39,
+      "adi": "10000 Mah Powerbank",
+      "categoryId": "7",
+      "imgUrl": "https://productimages.hepsiburada.net/s/26/375/10158242496562.jpg",
+      "adedi": null,
+      "fiyati": 214.42
+    },
+    {
+      "id": 40,
+      "adi": "Laptop",
+      "categoryId": "7",
+      "imgUrl": "https://productimages.hepsiburada.net/s/174/300-443/110000138043661.jpg",
+      "adedi": null,
+      "fiyati": 10638.93
+    },
+    {
+      "id": 41,
+      "adi": "Elektrikli Çaydanlık",
+      "categoryId": "7",
+      "imgUrl": "https://productimages.hepsiburada.net/s/56/375/11264914423858.jpg",
+      "adedi": null,
+      "fiyati": 1292
+    },
+    {
+      "id": 42,
+      "adi": "Ankastre",
+      "categoryId": "7",
+      "imgUrl": "https://statics.vestel.com.tr/productimages/20264171_r1_1000_1000.jpg",
+      "adedi": null,
+      "fiyati": 4799
+    },
+    {
+      "id": 43,
+      "adi": "Buzdolabı",
+      "categoryId": "7",
+      "imgUrl": "https://statics.vestel.com.tr/productimages/20264788_r1_1000_1000.jpg",
+      "adedi": null,
+      "fiyati": 17999
+    },
+    {
+      "id": 44,
+      "adi": "Playstation 5",
+      "categoryId": "7",
+      "imgUrl": "https://cdn.cimri.io/image/1000x1000/sonyplaystationoyunkonsolu_622618971.jpg",
+      "adedi": null,
+      "fiyati": 19500
+    },
+    {
+      "id": 45,
+      "adi": "Spor T-shirt",
+      "categoryId": "8",
+      "imgUrl": "https://cdn.dsmcdn.com/mnresize/500/-/ty327/product/media/images/20220209/17/47589795/348638575/1/1_org.jpg",
+      "adedi": null,
+      "fiyati": 499.95
+    },
+    {
+      "id": 46,
+      "adi": "Kaykay",
+      "categoryId": "8",
+      "imgUrl": "https://www.skateboardingturkey.com/Uploads/UrunResimleri/horn-classic-logo-purple-complete-prof-6-41ed.jpg",
+      "adedi": null,
+      "fiyati": 1299
+    },
+    {
+      "id": 47,
+      "adi": "Termal Örtü",
+      "categoryId": "8",
+      "imgUrl": "https://productimages.hepsiburada.net/s/64/375/110000005603906.jpg",
+      "adedi": null,
+      "fiyati": 75
+    },
+    {
+      "id": 48,
+      "adi": "Havuz Paleti",
+      "categoryId": "8",
+      "imgUrl": "https://productimages.hepsiburada.net/s/9/375/9186483077170.jpg",
+      "adedi": null,
+      "fiyati": 139
+    }
+  ]
+}

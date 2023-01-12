@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="mt-3 text-center"> {{urun.adi}} </h3>
+            <img src="{{urun.imgUrl}}" style="height: 600px;">
+            <h2 class="text-center mt-3">Fiyatı: {{urun.fiyati | currency:'TRY':'symbol-narrow':'1.2-2'}}</h2>
+        </div>
+        <div class="col-6" *ngIf="uye | async as user">
+            <h3 class="mt-3 text-center">Yorum Yap</h3>
+            <form [formGroup]="frm">
+                <div class="form-group">
+                    <input type="hidden" class="form-control" formControlName="name">
+                    <label>Yorumunuz</label>
+                    <input type="text" class="form-control" formControlName="yorum" required>
+                    <input type="hidden" class="form-control" formControlName="id">
+                    <input type="hidden" class="form-control" formControlName="productId">
+                    <input type="hidden" class="form-control" formControlName="uyeId">
+                </div>
+            </form>
+            <button  class="btn btn-primary mt-2" (click)="YorumEkle(user.displayName!)">Yorumu Gönder</button>
+            <div class="col-12 mt-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Yorumlar</h4>
+                    </div>
+                    <div *ngFor="let yorum of yorumlar">
+                        <div class="card-body">
+                            <h5>{{yorum.name}}</h5>
+                            <h6>{{yorum.yorum}}</h6>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" *ngIf="YorumCheck(yorum.name)" (click)="Yorumsil(yorum)"><i class="fa fa-trash"></i></button>
+                            <button class="btn btn-primary ms-2" *ngIf="YorumCheck(yorum.name)" (click)="Duzenle(yorum,modalDuzenle)"><i class="fa fa-edit"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" #modalDuzenle>
+    <div class="modal-dialog">
+      <form [formGroup]="frm" (ngSubmit)="YorumDuzenle()">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">{{modalBaslik}}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+  
+            <div class="form-group">
+              <label>Yorumunuz :</label>
+              <input type="text" class="form-control" formControlName="yorum">
+              <input type="hidden" class="form-control" formControlName="yorumId">
+            </div>
+  
+          </div>
+          <div class="modal-footer">
+  
+            <input type="submit" class="btn btn-outline-primary" value="Kaydet">
+            <button id="Bas" type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Kapat</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
